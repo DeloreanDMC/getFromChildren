@@ -5,6 +5,8 @@ const getFromChildren = (children, options) => {
         return Object.entries(options)
                .every(par => {
                    return el[par[0]] === par[1];
-               }) 
-    })
-}
+               }); 
+    });
+};
+
+export default getFromChildren;
